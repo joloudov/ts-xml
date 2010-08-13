@@ -6,8 +6,7 @@ module ThinkingSphinx
       if connection.class.name == "ActiveRecord::ConnectionAdapters::OracleEnhancedAdapter"
         connection.instance_variable_set(:@config, connection.raw_connection.instance_variable_get(:@config))
       end
-      initialize_without_oracle_database_configuration(index, options)
-
+      
       super(index, options)
     end
     
