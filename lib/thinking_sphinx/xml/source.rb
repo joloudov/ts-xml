@@ -1,12 +1,14 @@
 module ThinkingSphinx
   class Source
+    
     def initialize(index, options ={})
-      super
       connection = index.model.connection
       if connection.class.name == "ActiveRecord::ConnectionAdapters::OracleEnhancedAdapter"
         connection.instance_variable_set(:@config, connection.raw_connection.instance_variable_get(:@config))
       end
       initialize_without_oracle_database_configuration(index, options)
+
+      super(index, options)
     end
     
     def to_riddle_for_core(offset, position)
