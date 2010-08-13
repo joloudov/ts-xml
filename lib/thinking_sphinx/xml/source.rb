@@ -1,14 +1,13 @@
 module ThinkingSphinx
   class Source
-    def initialize_with_oracle_database_configuration(index, options = {})
+    def initialize(index, options ={})
+      super
       connection = index.model.connection
       if connection.class.name == "ActiveRecord::ConnectionAdapters::OracleEnhancedAdapter"
         connection.instance_variable_set(:@config, connection.raw_connection.instance_variable_get(:@config))
       end
       initialize_without_oracle_database_configuration(index, options)
     end
-    
-    alias_method_chain :initialize, :oracle_database_configuration
     
     def to_riddle_for_core(offset, position)
       source = Riddle::Configuration::XMLSource.new(

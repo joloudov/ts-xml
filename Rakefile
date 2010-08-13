@@ -1,4 +1,4 @@
 require 'rubygems'
-require 'tasks/distribution'
-require 'tasks/testing'
-require 'lib/thinking_sphinx/xml/tasks'
+
+require "#{File.dirname(__FILE__)}/tasks/distribution"
+require "#{File.dirname(__FILE__)}/tasks/testing"

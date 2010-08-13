@@ -1,7 +1,5 @@
-$:.unshift File.dirname(__FILE__) + '/../lib'
-$:.unshift File.dirname(__FILE__) + '/../vendor/thinking_sphinx/lib'
-
-require 'spec/rake/spectask'
+require 'rubygems'
+require 'rspec/core/rake_task'
 require 'cucumber/rake/task'
 
 namespace :features do

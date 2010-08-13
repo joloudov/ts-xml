@@ -1,10 +1,11 @@
 require 'rubygems'
 require 'cucumber'
-require 'spec'
+require 'rspec'
 require 'fileutils'
 require 'ginger'
 require 'will_paginate'
 require 'active_record'
+require 'thinking_sphinx'
 
 $:.unshift File.dirname(__FILE__) + '/../../../lib'
 $:.unshift File.dirname(__FILE__) + '/../../../vendor/thinking_sphinx/lib'
