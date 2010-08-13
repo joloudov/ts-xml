@@ -1,1 +1,1 @@
-require 'lib/thinking_sphinx/xml'
+require 'thinking_sphinx/xml'
