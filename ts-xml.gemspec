@@ -39,8 +39,8 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rails>, ["= 3.0.0.rc"])
-      s.add_runtime_dependency(%q<thinking-sphinx>, ["= 2.0.0.rc1"])
+      s.add_runtime_dependency(%q<rails>, [">= 3.0.0.rc"])
+      s.add_runtime_dependency(%q<thinking-sphinx>, [">= 2.0.0.rc1"])
       s.add_development_dependency(%q<rspec>, [">= 2.0.0.beta.19"])
       s.add_development_dependency(%q<jeweler>, [">= 1.4.0"])
       s.add_development_dependency(%q<yard>, [">= 0.5.8"])
@@ -48,8 +48,8 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<ginger>, [">= 1.2.0"])
       s.add_development_dependency(%q<will_paginate>, [">= 3.0.pre2"])
     else
-      s.add_dependency(%q<rails>, ["= 3.0.0.rc"])
-      s.add_dependency(%q<thinking-sphinx>, ["= 2.0.0.rc1"])
+      s.add_dependency(%q<rails>, [">= 3.0.0.rc"])
+      s.add_dependency(%q<thinking-sphinx>, [">= 2.0.0.rc1"])
       s.add_dependency(%q<rspec>, [">= 2.0.0.beta.19"])
       s.add_dependency(%q<jeweler>, [">= 1.4.0"])
       s.add_dependency(%q<yard>, [">= 0.5.8"])
@@ -58,8 +58,8 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<will_paginate>, [">= 3.0.pre2"])
     end
   else
-    s.add_dependency(%q<rails>, ["= 3.0.0.rc"])
-    s.add_dependency(%q<thinking-sphinx>, ["= 2.0.0.rc1"])
+    s.add_dependency(%q<rails>, [">= 3.0.0.rc"])
+    s.add_dependency(%q<thinking-sphinx>, [">= 2.0.0.rc1"])
     s.add_dependency(%q<rspec>, [">= 2.0.0.beta.19"])
     s.add_dependency(%q<jeweler>, [">= 1.4.0"])
     s.add_dependency(%q<yard>, [">= 0.5.8"])
